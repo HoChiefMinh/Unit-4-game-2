@@ -1,1 +1,1 @@
-# Unit-4CrystalsCollectorGame
+This is my week 4 homework assignment option that I opted to do for the University of Central Florida Coding Bootcamp. I utilized CSS, JavaScript, and JQuery. 
