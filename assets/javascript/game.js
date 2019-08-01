@@ -1,7 +1,7 @@
 // Pseudo Code
 
-// Four crystals display on page, and random result (19-120)
-// New random number should be generated everytime player wins/loses (1-12)
+// The random number shown at the start of the game should be between (19 - 120)
+// Four crystals display on page, and are assigned a random number (1-12)
 // to the crystals, and at the start of each new game
 // Each click of the crystals should add onto previous result
 // until equal to random number
@@ -15,10 +15,15 @@ $(document).ready(function() {
 var randomNum;
 var loss;
 var win;
-
-for (i = 0; i < 4; i++) {
     
+for (i = 0; i < 4; i++) {
+    var random = Math.floor(Math.random() * 12) + 1;
+        console.log(random);
     var crystal = $('<div>');
+        crystal.attr({
+            'class': 'crystal',
+            'data-random': random
+        });
 
     $('.crystals').append(crystal);
    
