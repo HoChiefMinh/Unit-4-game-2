@@ -1,5 +1,7 @@
 body {
-    background-image: image()
+    background-image: url("../images/abstract_background.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 #target {

@@ -19,29 +19,32 @@
 
 <!-- JavaScript -->
 <script src="assets/javascript/game.js" type="text/javascript"></script>
-<body class= "d-flex flex-column h-100">
-    <!--Main container-->
-    <div class="container-fluid px-lg-5">
-        <!--Header image-->
-        <div class="row">
-                <div class="col text-center">
-                <img class="img-fluid" id="header-image" src="assets/images/logo.jpg">
-                </div>
+<body>
+
+        <h1 id="title">CrystalsCollector!</h1>
+    
+        <div id="rules-area">
+          <h4>You will be given a random number at the start of the game.</h4>
+          <h4>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</h4>
+          <h4>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</h4>
+          <h4>The value of each crystal is hidden from you until you click on it.</h4>
+          <h4>Each time when the game starts, the game will change the values of each crystal</h4>
         </div>
-
-        <!-- Directions for game will go here -->
-    <div class="row">
-        
-    </div>
-    <!-- Target -->
-    <div id="target"></div>
-
-    <!-- Crystals -->
-    <div class="crystals"></div>
-
-    <!-- Wins/Losses/Score -->
-    <p class="p-2" id='total-score'></p>
-    <p class="p-2" id='wins'></p>
-    <p class="p-2" id='losses'></p>
-</body>
+    
+        <div id="screen">
+          <!-- Random Number Display -->
+          <div id="random-area"></div>
+          <!-- Wins/Losses Display -->
+          <div id="win-area"></div>
+        </div>
+    
+        <div>
+          <!-- Crystals -->
+          <div id="crystal-area"></div>
+          <div id="score-title">Your total score is:</div>
+          <!-- Score Display -->
+          <div id="score-area"></div>
+        </div>
+    
+      </body>
 </html>
