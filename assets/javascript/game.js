@@ -12,12 +12,12 @@
 // Exectutes the JS when the HTML is done loading 
 $(document).ready(function() {
 
-    // Global Variable 
+// Global Variable 
 let loss= 0;
-$('#losses').text('Losses: ', loss);
+$('#losses').text('Losses: ' + loss);
 
 let win = 0;
-$('#wins').text('Wins: ', win);
+$('#wins').text('Wins: ' + win);
 
 let userScore = 0;
 $('#total-score').text('You Gems: ' + userScore);
