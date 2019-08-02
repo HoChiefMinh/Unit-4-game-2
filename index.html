@@ -19,32 +19,50 @@
 
 <!-- JavaScript -->
 <script src="assets/javascript/game.js" type="text/javascript"></script>
-<body>
+<body class="d-flex flex-column h-100">
+  <main role="main" class="flex-shrink-0"></main>
 
-        <h1 id="title">CrystalsCollector!</h1>
+  <!-- main container -->
+<div class="container-fluid px-lg-5">
     
-        <div id="rules-area">
-          <h4>You will be given a random number at the start of the game.</h4>
-          <h4>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</h4>
-          <h4>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</h4>
-          <h4>The value of each crystal is hidden from you until you click on it.</h4>
-          <h4>Each time when the game starts, the game will change the values of each crystal</h4>
+    <!-- Header Image -->
+    <div class="row">
+        <div class="col text-center">
+        <img class="img-fluid" id="header-image" src="assets/images/logo.jpg">
         </div>
-    
-        <div id="screen">
-          <!-- Random Number Display -->
-          <div id="random-area"></div>
-          <!-- Wins/Losses Display -->
-          <div id="win-area"></div>
+    </div>
+
+    <!-- Directions for game/Win & losses dialog will display here -->
+    <div class="row mx-lg-n5 mt-3">
+        <div class="col py-3 px-lg-5 text-center">
+          <p id= "directions">Each rare crystal is asigned a random number. Click on a gem to harvest and unlock the awesome powers hidden inside each gem. Becareful not to over harvest the rare gems or else there will be consequences!</p>
         </div>
-    
-        <div>
-          <!-- Crystals -->
-          <div id="crystal-area"></div>
-          <div id="score-title">Your total score is:</div>
-          <!-- Score Display -->
-          <div id="score-area"></div>
+    </div>
+
+    <!-- Target -->
+    <div class="row">
+        <div class="col text-center"> 
+          <h2 class="mt-3">Harvest limit: <span id="harvest-limit"></span></h2>
         </div>
-    
+    </div>
+
+    <!-- Crystals -->
+    <div class="row">
+      <div class="col mt-5 text-center">
+        <div id="crystal-container">
+
+        </div>
+      </div>
+    </div>
+
+    <!-- wins/losses -->
+    <div class="row ms-lg-n5 mt-3">
+      <p class="p-2" id="total-score"></p>
+      <p class="p-2" id="wins"></p>
+      <p class="p-2" id="losses"></p>
+    </div>
+        
+</div>
+  
       </body>
 </html>
