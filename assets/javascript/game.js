@@ -13,14 +13,14 @@
 $(document).ready(function() {
 
     // Global Variable 
-let loss= 0;
-$('#losses').text('Losses: ', loss);
+let loss = 0;
+$('#losses').text('Losses: ' + loss);
 
 let win = 0;
 $('#wins').text('Wins: ', win);
 
 let userScore = 0;
-$('#total-score').text('You Gems: ' + userScore);
+$('#total-score').text('Your Gems: ' + userScore);
 
 let winningAmount = Math.floor(Math.random() * 101) + 19;
 $('target').text('Your Gems: ' + winningAmount);
@@ -49,7 +49,7 @@ var resetGame = function () {
     
     }
 
-    $('#total-score').text('You Gems: ' + userScore);
+    $('#total-score').text('Your Gems: ' + userScore);
 }
 
 resetGame();
@@ -62,7 +62,7 @@ $(document).on('click', '.crystal', function() {
 
     userScore += num;
 
-    $('#total-score').text('You Gems: ' + userScore);
+    $('#total-score').text('Your Gems: ' + userScore);
 
     console.log(userScore);
 
