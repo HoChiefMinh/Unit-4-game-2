@@ -2,22 +2,56 @@ body {
     background-image: url("../images/abstract_background.jpeg");
     background-repeat: no-repeat center;
     background-size: 100%;
+    font-family: 'Abel', sans-serif;
+    
 }
 
-#target {
+#header-image {
+    width: 1000px;
+    height: 275px;
+    border: none; 
     margin: 20px;
+}
+
+#directions {
+    position: relative;
+    text-align: center;
     padding: 15px;
-    font-weight: 500;
+    margin: 25px;
+    margin-right: 10px;
+    color: white;
+}
+
+
+#harvest-limit {
+    display: flex;
+    text-align: center;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 25px;
+    margin-right: 10px;
+    color: white;
 }
 
 .crystals {
     display: flex;
-    justify-content: space-between;
-    align-items: center
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .crystal {
-    border: 1px solid black;
     height: 200px;
     width: 200px;
 }
+
+ #score, #wins, #losses {
+     margin-top: 25px;
+     padding: 15px;
+     color: white;  
+ }
+
+ #info {
+    margin-top: 15px;
+ }
