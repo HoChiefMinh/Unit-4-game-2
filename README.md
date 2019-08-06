@@ -1,1 +1,1 @@
-This is my week 4 homework assignment option that I opted to do for the University of Central Florida Coding Bootcamp. I utilized CSS, JavaScript, and JQuery. 
+This is my week 4 homework assignment option that I opted to do for the University of Central Florida Coding Bootcamp. I utilized CSS, JavaScript, and JQuery in order to build and run a fully functioning crystal collector game that was themed around Fortnite. Enjoy! Here's a link feel free to check it out! https://hochiefminh.github.io/Unit-4-game-2/ 
